@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>루밋 개인정보 처리방침</title>
+<style>
+  :root { color-scheme: light dark; }
+  body{max-width:760px;margin:0 auto;padding:32px 20px 80px;
+       font:16px/1.75 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard",sans-serif;
+       color:#1c1c1e;background:#fff;word-break:keep-all}
+  @media (prefers-color-scheme:dark){body{color:#e8e8ea;background:#111}}
+  h1{font-size:26px;margin:0 0 6px;letter-spacing:-.02em}
+  h2{font-size:19px;margin:38px 0 10px;letter-spacing:-.01em}
+  .meta{color:#8a8a8e;font-size:14px;margin-bottom:8px}
+  table{border-collapse:collapse;width:100%;margin:12px 0;font-size:14.5px;display:block;overflow-x:auto}
+  th,td{border:1px solid #d8d8dc;padding:8px 10px;text-align:left;vertical-align:top}
+  @media (prefers-color-scheme:dark){th,td{border-color:#3a3a3c}}
+  th{background:#f5f5f7;font-weight:600}
+  @media (prefers-color-scheme:dark){th{background:#1c1c1e}}
+  ul{padding-left:20px}
+  code{background:#f0f0f3;padding:1px 5px;border-radius:4px;font-size:14px}
+  @media (prefers-color-scheme:dark){code{background:#2c2c2e}}
+  .box{border-left:3px solid #1f7a4d;padding:2px 0 2px 14px;margin:16px 0;color:#444}
+  @media (prefers-color-scheme:dark){.box{color:#bbb}}
+</style>
+</head>
+<body>
+
+<h1>개인정보 처리방침</h1>
+<p class="meta">루밋(Rumit) · 시행일 2026년 8월 4일</p>
+
+<p>루밋(이하 “앱”)은 등산 경로와 고도를 기록하고, 완등한 산·코스를 모아 보여주는 서비스입니다.
+앱은 서비스 제공에 꼭 필요한 최소한의 정보만 수집하며, 어떤 정보도 광고나 이용자 추적 목적으로
+사용하지 않습니다. 본 방침은 앱이 무엇을, 왜, 얼마나 오래 보관하는지 설명합니다.</p>
+
+<h2>1. 수집하는 정보와 이용 목적</h2>
+<table>
+  <thead><tr><th>항목</th><th>수집 시점</th><th>이용 목적</th></tr></thead>
+  <tbody>
+    <tr><td>위치정보(위도·경도·고도)</td><td>이용자가 <b>“산행 시작”을 누른 뒤부터 종료할 때까지</b></td><td>산행 경로·거리·누적 상승고도 기록, 정상 도착 자동 인증</td></tr>
+    <tr><td>기기 동작·피트니스 데이터(기압계)</td><td>산행 기록 중</td><td>GPS만으로는 부정확한 누적 상승고도 보정</td></tr>
+    <tr><td>사진</td><td>이용자가 인증샷을 직접 선택·촬영할 때</td><td>산행 기록에 첨부, 공유 카드 생성</td></tr>
+    <tr><td>이메일 주소</td><td>회원가입 시</td><td>계정 식별, 로그인, 계정 복구</td></tr>
+    <tr><td>닉네임·프로필 사진</td><td>이용자가 입력하거나 소셜 로그인에서 제공될 때</td><td>피드·댓글에서의 표시</td></tr>
+    <tr><td>이용자 작성 콘텐츠(산행 제목, 댓글)</td><td>이용자가 작성할 때</td><td>서비스 표시</td></tr>
+    <tr><td>푸시 알림 토큰</td><td>알림을 허용한 경우</td><td>알림 발송</td></tr>
+  </tbody>
+</table>
+
+<div class="box">
+  <b>위치정보에 대하여.</b> 앱은 산행을 시작하지 않은 동안에는 위치를 수집하지 않습니다.
+  산행은 보통 여러 시간 이어지고 그동안 휴대폰 화면이 꺼져 있으므로, 경로가 끊기지 않도록
+  <b>백그라운드 위치 접근(“항상 허용”)</b>을 요청합니다. 이 권한은 산행 기록 외의 목적으로
+  사용되지 않으며, 거부하더라도 앱 화면이 켜져 있는 동안의 기록은 정상 동작합니다.
+</div>
+
+<h2>2. 수집하지 않는 정보</h2>
+<ul>
+  <li>연락처, 주소록, 통화·문자 기록</li>
+  <li>결제 정보, 주민등록번호 등 고유식별정보</li>
+  <li>광고 식별자(IDFA) — 앱에는 광고 SDK가 없으며 <b>이용자 추적을 하지 않습니다</b></li>
+  <li>제3자 분석 도구를 통한 행동 로그</li>
+</ul>
+
+<h2>3. 정보의 보관과 처리 위탁</h2>
+<p>수집된 정보는 백엔드 서비스인 <b>Supabase</b>(Supabase Inc.)의 인프라에 저장·처리됩니다.
+이는 서비스 제공을 위한 처리 위탁이며, 위탁 업무는 데이터베이스·인증·파일 저장에 한정됩니다.
+푸시 알림 발송에는 <b>Expo</b>(Expo, Inc.)의 알림 전송 서비스를 이용합니다.
+이 외 어떤 제3자에게도 이용자의 정보를 제공하거나 판매하지 않습니다.</p>
+
+<h2>4. 보유 기간과 파기</h2>
+<ul>
+  <li>이용자의 정보는 <b>계정이 유지되는 동안</b> 보관합니다.</li>
+  <li>이용자가 개별 산행 기록을 삭제하면 해당 경로·사진이 즉시 삭제됩니다.</li>
+  <li>이용자가 계정을 삭제하면 <b>계정과 연결된 모든 기록·사진·댓글이 즉시, 복구 불가능하게 삭제</b>됩니다.
+      별도의 보관 기간을 두지 않습니다.</li>
+</ul>
+
+<h2>5. 계정 및 데이터 삭제 방법</h2>
+<p>앱 안에서 직접 삭제할 수 있으며, 별도 요청이나 웹사이트 방문이 필요하지 않습니다.</p>
+<p><b>앱 실행 → 설정 → 화면 맨 아래 “계정 삭제”</b> → 안내 확인 → 재인증 → 삭제</p>
+<p>삭제 후에는 같은 이메일로 다시 가입할 수 있으나, 이전 기록은 복구되지 않습니다.</p>
+
+<h2>6. 이용자의 권리</h2>
+<p>이용자는 언제든지 자신의 정보를 열람·수정·삭제할 수 있고, 처리 정지를 요구할 수 있습니다.
+프로필 정보는 앱의 [설정 &gt; 프로필 편집]에서, 산행 기록은 각 기록 화면에서 직접 수정·삭제할 수 있습니다.
+그 밖의 요청은 아래 연락처로 보내 주시면 지체 없이 처리합니다.</p>
+<p>또한 각 산행의 <b>공개 여부</b>는 이용자가 산행마다 직접 선택합니다. 비공개 산행은 본인 외에는
+조회할 수 없습니다.</p>
+
+<h2>7. 만 14세 미만 아동</h2>
+<p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 알면서 수집하지 않습니다.
+아동의 정보가 수집된 사실을 알게 되면 즉시 삭제합니다.</p>
+
+<h2>8. 안전성 확보 조치</h2>
+<ul>
+  <li>모든 통신은 HTTPS(TLS)로 암호화됩니다.</li>
+  <li>데이터베이스에 행 수준 보안(Row Level Security)을 적용해, 이용자는 자신의 데이터와
+      공개로 설정된 데이터만 접근할 수 있습니다.</li>
+  <li>비밀번호는 단방향 해시로 저장되며 운영자도 원문을 알 수 없습니다.</li>
+</ul>
+
+<h2>9. 개인정보 보호책임자 / 문의</h2>
+<p>이메일: <b>yoobong56@gmail.com</b></p>
+
+<h2>10. 방침의 변경</h2>
+<p>본 방침이 변경되는 경우 앱 공지 또는 본 페이지를 통해 변경 내용과 시행일을 알립니다.</p>
+
+</body>
+</html>
